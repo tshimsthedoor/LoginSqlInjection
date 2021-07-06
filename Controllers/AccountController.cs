@@ -47,12 +47,12 @@ namespace LoginSqlInjection.Controllers
 
         }
 
-        //public ActionResult LogOut()
-        //{
-        //    int userid = (int)Session["ID"];
-        //    Session.Abandon();
-        //    return RedirectToAction("Login", "Account");
-        //}
+        public ActionResult LogOut()
+        {
+            int userid = (int)Session["ID"];
+            Session.Abandon();
+            return RedirectToAction("Login", "Account");
+        }
     }
 }
 
